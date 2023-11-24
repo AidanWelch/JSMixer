@@ -5,11 +5,14 @@
 	],
 	"env": {
 		"node": true,
-		"es2022": true
+		"es2022": true,
+		"browser": true
 	},
 	"parserOptions": {
-		"ecmaVersion": "latest"
+		"ecmaVersion": "latest",
+		"sourceType": "module"
 	},
+	"ignorePatterns": ["node_modules/**", "build/**"],
 	"rules": {
 		"no-console": ["error", { "allow": ["info", "warn", "error"] }],
 		"semi": ["error", "always"],
@@ -69,9 +72,9 @@
 	},
 	"overrides": [
 		{
-			"files": ["**.mjs"],
+			"files": ["**.cjs"],
 			"parserOptions": {
-				"sourceType": "module"
+				"sourceType": "script"
 			}
 		}
 	]

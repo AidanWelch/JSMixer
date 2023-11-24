@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Mixer</title>
+<style type="text/css" media="screen">
+	html{
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	#menu {
+		display: flex;
+		flex-basis: content;
+		margin-bottom: 10px;
+		padding: 0px;
+	}
+	#menu > * {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	#editor {
+		flex-grow: 1;
+	}
+	label.toggleButton input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+</style>
+</head>
+<body>
+	<div id="menu">
+		<h3>JS Mixer</h3>
+		<button id="runButton" title="Run" aria-label="Run">
+			<?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6.90588 4.53682C6.50592 4.2998 6 4.58808 6 5.05299V18.947C6 19.4119 6.50592 19.7002 6.90588 19.4632L18.629 12.5162C19.0211 12.2838 19.0211 11.7162 18.629 11.4838L6.90588 4.53682Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+		</button>
+		<label class="toggleButton">
+			<input type="checkbox" id="loopToggle" title="Toggle Loop" aria-label="Toggle Loop">
+			<?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21.1679 8C19.6247 4.46819 16.1006 2 11.9999 2C6.81459 2 2.55104 5.94668 2.04932 11" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.88146 16C4.42458 19.5318 7.94874 22 12.0494 22C17.2347 22 21.4983 18.0533 22 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7.04932 16H2.64932C2.31795 16 2.04932 16.2686 2.04932 16.6V21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+		</label>
+	</div>
+	<div id="editor">// Made by Aidan Welch https://github.com/AidanWelch/JSMixer
+// Credit to https://iconoir.com/ for the icons and https://ace.c9.io/ for the editor
+// import * as Tone from 'tone';
+// is already done for you
+</div>
+	<script src="main.js"></script>
+</body>
+</html>
